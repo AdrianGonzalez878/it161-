@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+    /* start positioning styles */
+
+    .text-align-center{
+    text-align:center;
+    background-color:aqua;
+    }
+
+
+    .margin-auto > div{
+    margin:auto;
+    width:50%;
+    background-color:beige;
+    text-align:center;
+    }
+
+        /* Allows box to take up full space, ignoring padding/margin */
+    * {
+    box-sizing: border-box;
+    }
+
+
+    /* Create two equal columns that floats next to each other */
+    .my-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 300px; /* Can be removed. Only for demonstration */
+    }
+    /* Clear floats after the columns */
+    .my-row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    
+  
+
+    @media all and (max-width:500px) {
+   .my-column {
+       width: 100%;
+     }
+    }
+
+    .fa {
+   padding: 20px;
+   font-size: 30px;
+   text-align: center;
+   text-decoration: none;
+   margin: 5px 2px;
+   border-radius: 50%;
+ }
+  .fa:hover {
+     opacity: 0.7;
+ }
+  .fa-facebook {
+   background: #3B5998;
+   color: white;
+ }
+  .fa-twitter {
+   background: #55ACEE;
+   color: white;
+ }
+  .fa-youtube {
+   background: #bb0000;
+   color: white;
+ }
+  .fa-instagram {
+   background: #125688;
+   color: white;
+ }
+  .fa-snapchat-ghost {
+   background: #fffc00;
+   color: white;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ }
+
+ .social-container {
+   display: flex;
+   justify-content: space-evenly;
+ }
+
+ .fa-facebook {
+   background: #3B5998;
+   color: white;
+   padding: 20px 25px;
+}
+
+/* flexible image rules start here */
+
+
+.flexible img{
+   width:100%;
+}
+
+
+.flexible{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+
+/* flexible image rules end here */
+
+   
+
+
+    /* end positioning styles */
+
+    </style>
+</head>
+<body>
+    <div class="text-align-center">
+        This text is positioned using text-align center.
+    </div>
+
+
+    <div class="margin-auto">
+        <div>This text is in a div positioned by margin:auto</div>
+    </div>
+
+    <div class="my-row">
+        <div class="my-column" style="background-color:#aaa;">
+            <h2>Column 1</h2>
+            <p>Left column desktop, stacks in mobile</p>
+            <p>From <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive" target="_blank">W3Schools</a></p>
+        </div>
+        <div class="my-column" style="background-color:#bbb;">
+            <h2>Column 2</h2>
+            <p>Right column desktop, stacks in mobile</p>
+        </div>
+     </div>
+    
+
+     <div class="social-container">
+           <div><a href="#" class="fa fa-facebook"></a></div>
+           <div><a href="#" class="fa fa-twitter"></a></div>
+           <div><a href="#" class="fa fa-youtube"></a></div>
+           <div><a href="#" class="fa fa-instagram"></a></div>
+           <div><a href="#" class="fa fa-snapchat-ghost"></a></div>
+       </div>
+
+       <div class="flexible">
+        <div style="max-width:300px">
+            <img src="https://picsum.photos/id/237/536/354" />
+        </div>
+       </div>
+       
+       <div class="flexible">
+        <div style="max-width:400px">
+            <img src="https://picsum.photos/id/1074/536/354" />
+        </div>
+       </div>
+       
+       <div class="my-column" style="background-color:#aaa;">
+        <h2>Column 1</h2>
+        <p>Left column desktop, stacks in mobile</p>
+        <p>From <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive" target="_blank">W3Schools</a></p>
+       
+       
+          <div class="flexible">
+            <div style="max-width:300px">
+                <img src="https://picsum.photos/id/237/536/354" />
+            </div>
+          </div>
+       
+       
+       </div>
+     
+</body>
+</html>

@@ -1,0 +1,253 @@
+@charset "uutf_8";
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: plum;
+    color: white;
+    text-align: center;
+    padding: 1em;
+
+}
+
+
+    .logo-header img{
+        width: 50px;
+    }
+    .nav-menu ul{
+        display: flex;
+        align-items: center;
+    }
+    .nav-menu li{
+        margin-right: 1rem;
+    }
+    .nav-menu a{
+        color: #fff;
+    }
+    .nav-menu li:last-child{
+        background:#4ad295;
+        padding: .25rem .75rem;
+        border-radius: .2rem;
+    }
+    .menu-icon img{
+        width: 30px;
+        height: 30px;
+        border-radius: 2px;
+    }
+    .menu-icon, #check{
+        display: none;
+    }
+    @media (max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top:70px;
+        left:-100%;
+        background: #222;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .nav-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav-menu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+}
+section {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: plum;
+    border-radius: 90px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.animal{
+    margin-top: 1em;
+}
+
+section.animal:hover {
+    background-color: rgba(47, 172, 255, 0.967)
+}
+
+section.food:hover {
+    background-color: rgba(172, 255, 47, 0.967)
+}
+
+section.horses:hover {
+    background-color: rgba(255, 50, 47, 0.967)
+}
+
+section.music:hover {
+    background-color: rgba(245, 255, 47, 0.967)
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+
+.lol{
+   height: 400px;
+   width: 700px;
+   padding-left: 50px;
+}
+
+.nutri{
+   height: 400px;
+   width: 700px;
+   padding-left: 50px;
+}
+
+.orquesta{
+   height: 400px;
+   width: 700px;
+   padding-left: 50px;
+}
+
+
+.pig{
+    height: 300px;
+    width: 300px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.sano{
+    height: 300px;
+    width: 300px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.hourse{
+    height: 300px;
+    width: 300px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.sing{
+    height: 300px;
+    width: 300px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
+
+ .gira{
+    margin: 0;
+    background-color: whitesmoke;
+    text-align: center;
+    color: whitesmoke;
+}
+.container-carousel{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+.carousel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+.image{
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+    display:flex;
+}
+span{
+    margin: auto;
+    font-size: 2rem;
+}
+
+@keyframes rotate360{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotatey(-360deg);
+    }
+    
+}
+.image:nth-child(1){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(0deg) translatez(430px);
+}
+.image:nth-child(2){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(40deg) translatez(430px);
+}
+.image:nth-child(3){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(80deg) translatez(430px);
+}
+.image:nth-child(4){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(120deg) translatez(430px);
+}
+.image:nth-child(5){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(160deg) translatez(430px);
+}
+.image:nth-child(6){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(200deg) translatez(430px);
+}
+.image:nth-child(7){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(240deg) translatez(430px);
+}
+.image:nth-child(8){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(280deg) translatez(430px);
+}
+.image:nth-child(9){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(320deg) translatez(430px);
+}
+.image:nth-child(10){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(360deg) translatez(430px);
+}
+
